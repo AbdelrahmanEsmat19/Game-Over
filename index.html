@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Over</title>
+    <link rel="shortcut icon" href="./image/icon.png" type="image/icon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section
+      id="loader"
+      class="vh-100 justify-content-center align-items-center  position-fixed top-0 bottom-0 start-0 end-0 bg-black bg-opacity-75"
+    >
+      <span class="loader"></span>
+    </section>
+    <nav
+      class="navbar navbar-expand-lg position-sticky top-0 z-3 my-5 container rounded-5 bg-light"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">GAMES <span>Site</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active" role="button" data-code="mmorpg">
+              Mmorpg
+            </li>
+            <li class="nav-item" role="button" data-code="shooter">Shooter</li>
+            <li class="nav-item" role="button" data-code="permadeath">
+              Permadeath
+            </li>
+            <li class="nav-item" role="button" data-code="superhero">
+              Superhero
+            </li>
+            <li class="nav-item" role="button" data-code="pixel">Pixel</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="my-5" id="Home">
+      <div class="container">
+        <div id="dataGames" class="row g-4 text-center"></div>
+      </div>
+    </section>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen-sm-down">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="modal-title titles fs-5" id="exampleModalLabel">
+              Game Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src=""
+                    class="img-fluid rounded"
+                    alt=""
+                    id="game-image"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h2 class="mb-3 titles">Game Information</h2>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <strong>Title:</strong> <span id="game-title"></span>
+                    </li>
+                    <li class="list-group-item">
+                      <strong>Category:</strong>
+                      <span id="game-category"></span>
+                    </li>
+                    <li class="list-group-item">
+                      <strong>Platform:</strong>
+                      <span id="game-platform"></span>
+                    </li>
+                    <li class="list-group-item">
+                      <strong>Status:</strong> <span id="game-status"></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <h2 class="mb-3 titles">Game Description</h2>
+                  <p id="game-description"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+#Home{
+  min-height: 100vh;
+}
+body{
+  overflow: hidden;
+}
+nav {
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+.nav-item {
+  padding-right: 10px;
+  transition: color 0.3s ease-in-out;
+  text-align: center;
+
+}
+.navbar-brand span {
+  color: #ed213a;
+}
+#Home {
+  font-family: "Bebas Neue", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+.modal {
+  --bs-modal-width: 1200px;
+  background: #ed213a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #93291e,
+    #ed213a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #93291e,
+    #ed213a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.modal-content,
+.list-group {
+  color: #e3170aff;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 10px;
+
+}
+
+
+.list-group span {
+  color: rgb(154, 0, 1);
+  padding: 8px;
+  border-radius: 15px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 14px;
+  font-weight: bold;
+}
+body {
+  background: #ed213a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #93291e,
+    #ed213a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #93291e,
+    #ed213a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#game-description {
+  background-color: white;
+  color: black;
+  padding: 9px;
+  border-radius: 15px;
+}
+.list-group-item {
+  background-color: unset;
+  color: black;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  transition: filter 0.6s, transform 0.3s;
+  filter: grayscale(0.8);
+}
+
+.card:hover img {
+  filter: grayscale(0);
+}
+
+.card:hover::before {
+  filter: blur(10px);
+}
+.card-body,
+.card-footer {
+  color: black;
+  background-color: white;
+}
+.card-title img {
+  width: 40px;
+}
+
+.nav-item:hover {
+  color: #ed213a;
+}
+
+.nav-item.active {
+  color: #93291e;
+}
+#loader{
+  display: flex;
+  z-index: 9996;
+}
+.loader {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  animation: rotate 1.5s ease-in infinite alternate;
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #FF3D00;
+  background: currentColor;
+  width: 64px;
+  height: 32px;
+  border-radius: 0 0 50px 50px;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  background: #FFF;
+  width: 8px;
+  height: 64px;
+  animation: rotate 1.2s linear infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  100% { transform: rotate(360deg)}
+}
+      
+
+   
